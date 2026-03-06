@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trip Budget Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Plan Your Trip Budget</h1>
+<div class="main-container">
+
+<div class="budget-box">
+
+<form id="tripForm">
+
+<label>Number of People</label><br>
+<input type="number" id="people"><br><br>
+
+<label>Total Budget (₹)</label><br>
+<input type="number" id="budget"><br><br>
+
+<label>Starting City</label><br>
+<input type="text" id="city"><br><br>
+
+<label>Number of Days</label><br>
+<input type="number" id="days"><br><br>
+
+<label>Transport Type</label><br>
+<select id="transport">
+<option value="bus">Public Transport</option>
+<option value="car">Private Vehicle</option>
+<option value="cab">Cab / Taxi</option>
+</select><br><br>
+
+<label>Trip Type</label><br>
+<select id="tripType">
+<option value="budget">Budget Friendly</option>
+<option value="medium">Moderate</option>
+<option value="luxury">Luxury</option>
+</select><br><br>
+
+<button type="button" onclick="planTrip()">Plan My Trip</button>
+
+</form>
+
+<p id="result"></p>
+
+</div>
+</div>
+
+<script src="hi.js"></script>
+
+</body>
+</html>
